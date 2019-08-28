@@ -1,5 +1,12 @@
 package xyz.joedai.schoolproj;
 
+/**
+ * Teacher class - defines a teacher in a School
+ * <br>
+ * Holds basic information about teacher (first name, last name, subject that he/she teaches).
+ * <br>
+ * toString() method prints out the above information in a human-readable way
+ */
 public class Teacher {
     // --- Initialize variables --- //
     private String firstName;
@@ -7,7 +14,24 @@ public class Teacher {
     private String subject;
 
 
-    // --- Constructor --- //
+    // --- Constructors --- //
+    /**
+     * Default constructor for Teacher class - sets all fields to "Undefined"
+     */
+    Teacher() {
+        // Set all to undefined
+        this.firstName = "Undefined";
+        this.lastName = "Undefined";
+        this.subject = "Undefined";
+    }
+
+    /**
+     * Parameterized constructor for Teacher class
+     *
+     * @param firstName First name of the teacher
+     * @param lastName Last name of the teacher
+     * @param subject Subject that the teacher teaches
+     */
     Teacher(String firstName, String lastName, String subject) {
         // Standard constructor assignments
         this.firstName = firstName;
@@ -16,9 +40,12 @@ public class Teacher {
     }
 
 
-    // --- Main methods --- //
-
-    // - object as a string -
+    // --- Methods --- //
+    /**
+     * Returns a string with information about the teacher
+     *
+     * @return string with the name of the teacher and subject he/she teaches
+     */
     @Override
     public String toString() {
         // Returns "Name: {name} Subject: {subject}"
@@ -27,8 +54,7 @@ public class Teacher {
 
 
     // --- Getters & Setters --- //
-
-    // - firstName =
+    // First name
     public String getFirstName() {
         return firstName;
     }
@@ -36,7 +62,7 @@ public class Teacher {
         this.firstName = firstName;
     }
 
-    // - lastName -
+    // Last name
     public String getLastName() {
         return lastName;
     }
@@ -44,7 +70,7 @@ public class Teacher {
         this.lastName = lastName;
     }
 
-    // - subject -
+    // Subject
     public String getSubject() {
         return subject;
     }
