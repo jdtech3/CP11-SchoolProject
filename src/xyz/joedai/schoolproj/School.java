@@ -55,6 +55,7 @@ public class School {
      * @param subject Subject that the teacher teaches
      */
     public void addTeacher(String firstName, String lastName, String subject) {
+        // Create a new Teacher object and add it to the teachers ArrayList
         Teacher teacherObj = new Teacher(firstName, lastName, subject);
         teachers.add(teacherObj);
     }
@@ -67,18 +68,23 @@ public class School {
      * @param grade Current grade that the student is in
      */
     public void addStudent(String firstName, String lastName, int grade) {
+        // Create a new Student object and add it to the students ArrayList
         Student studentObj = new Student(firstName, lastName, grade);
         students.add(studentObj);
     }
 
     /**
      * Removes a teacher from the ArrayList of teachers
+     *
      * @param firstName First name of teacher
      * @param lastName Last name of teacher
      * @param subject Subject that the teacher teaches
      */
     public void removeTeacher(String firstName, String lastName, String subject) {
+        // Create a new Teacher object with the given info...
         Teacher teacherObj = new Teacher(firstName, lastName, subject);
+
+        // ...then use this new Teacher object to search for and remove the one in the teachers ArrayList
         teachers.remove(teacherObj);
     }
 
@@ -90,13 +96,15 @@ public class School {
      * @param grade Current grade that the student is in
      */
     public void removeStudent(String firstName, String lastName, int grade) {
+        // Create a new Student object with the given info...
         Student studentObj = new Student(firstName, lastName, grade);
+
+        // ...then use this new Student object to search for and remove the one in the students ArrayList
         students.remove(studentObj);
     }
 
     /**
-     * Prints a list of all the teachers in the school based
-     * on the toString() method of the Teacher class
+     * Prints a list of all the teachers in the school based on the toString() method of the Teacher class
      */
     public void printTeachers() {
         for (int i = 0; i < teachers.size(); i++ ) {
@@ -106,8 +114,7 @@ public class School {
     }
 
     /**
-     * Prints a list of all the students in the school based
-     * on the toString() method of the Student class
+     * Prints a list of all the students in the school based on the toString() method of the Student class
      */
     public void printStudents() {
         for (int i = 0; i < students.size(); i++ ) {

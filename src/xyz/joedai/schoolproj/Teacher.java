@@ -52,6 +52,26 @@ public class Teacher {
         return String.format("Name: %s %s Subject: %s", this.firstName, this.lastName, this.subject);
     }
 
+    /**
+     * Overrides equals() with fixed version of equals() that compares if the 2 objects' info are the same
+     * (rather than the default, which compares if they are the same object)
+     * <br>
+     * <i>Required for the removeTeacher() method of the School class</i>
+     *
+     * @param obj Object to compare to this object
+     * @return If given object is equal to this object
+     */
+    @Override
+    public boolean equals(Object obj) {
+        // Cast type to correct type
+        Teacher teacherObj = (Teacher) obj;
+
+        // Check if first name, last name, and subject are the same and return result
+        return teacherObj.firstName == this.firstName &&
+               teacherObj.lastName == this.lastName &&
+               teacherObj.subject == this.subject;
+    }
+
 
     // --- Getters & Setters --- //
     // First name
