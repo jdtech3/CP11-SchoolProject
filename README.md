@@ -13,63 +13,63 @@ Here is the criteria for each class:
 
 * Fields:
 
-  * Holds an ArrayList of Teachers
-  * Holds an ArrayList of students
-  * Holds an ArrayList of Courses
-  * 3 fields of your choosing (example name) with setters and getter
+  * [x] Holds an ArrayList of Teachers
+  * [x] Holds an ArrayList of students
+  * [ ] Holds an ArrayList of Courses
+  * [x] 3 fields of your choosing (example name) with setters and getter
 
 * Methods:
 
-  * Add a teacher to list
-  * Add a student to list
-  * Delete teacher from list
-  * Delete student from list
-  * Show all Teachers
-  * Show all Students
-  * Appropriate constructor
+  * [x] Add a teacher to list
+  * [x] Add a student to list
+  * [x] Delete teacher from list
+  * [x] Delete student from list
+  * [x] Show all Teachers
+  * [x] Show all Students
+  * [x] Appropriate constructor
 
 **Teacher Class**
 
 * Fields:
 
-  * first name
-  * last name
-  * subject
+  * [x] first name
+  * [x] last name
+  * [x] subject
 
 * Methods:
 
-  * Appropriate Constructor
-  * When teacher object printed Name: name Subject: subject
-  * setters and getters
+  * [x] Appropriate Constructor
+  * [x] When teacher object printed Name: name Subject: subject
+  * [x] setters and getters
 
 **Student Class**
 
 * Fields:
 
-  * first name
-  * last name
-  * grade
-  * unique student number created on construction
+  * [x] first name
+  * [x] last name
+  * [x] grade
+  * [x] unique student number created on construction
 
 * Methods:
 
-  * getters and setters
-  * Appropriate Constructor
-  * When printed "Name: name Grade: grade
+  * [x] getters and setters
+  * [x] Appropriate Constructor
+  * [x] When printed "Name: name Grade: grade
 
 **Comments in all Classes**
 
-* Description of class
-* description of methods other than getters and setters
+* [x] Description of class
+* [x] description of methods other than getters and setters
 
 **Using Your new Classes**
 
-* Add 10 students to student list
-* add 3 teachers to teacher list
-* display both lists
-* remove 2 students
-* remove 1 teacher
-* display both lists
+* [x] Add 10 students to student list
+* [x] add 3 teachers to teacher list
+* [x] display both lists
+* [x] remove 2 students
+* [x] remove 1 teacher
+* [x] display both lists
 
 ---
 
