@@ -12,9 +12,6 @@ public class School {
     private ArrayList<Teacher> teachers = new ArrayList<>();
     private ArrayList<Student> students = new ArrayList<>();
 
-    // TODO: Figure out what this is for...
-    // ArrayList<String> courses = new ArrayList<>();
-
     private String name;
     private String address;
     private String phoneNumber;
