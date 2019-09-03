@@ -15,7 +15,7 @@ Here is the criteria for each class:
 
   * [x] Holds an ArrayList of Teachers
   * [x] Holds an ArrayList of students
-  * [ ] Holds an ArrayList of Courses
+  * [ ] ~~Holds an ArrayList of Courses~~
   * [x] 3 fields of your choosing (example name) with setters and getter
 
 * Methods:
